@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useUserQuery } from "@/shared/generated";
 
 export default function Home() {
+  // const { data } = useUserQuery({
+  //   fetchPolicy: "network-only",
+  // });
+
+  // console.log(data);
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
